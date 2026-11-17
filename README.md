@@ -87,4 +87,7 @@ Der Ordner `results/` enthält die ausgewerteten Referenzläufe. Zwischenexperim
 
 ## Lizenz
 
-Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
+Dieses Projekt steht unter folgenden Lizenzen:
+
+* Code: PolyForm Noncommercial License 1.0.0 (siehe LICENSE)
+* Ergebnisdaten (results/): CC BY-NC 4.0 (siehe results/LICENSE)
