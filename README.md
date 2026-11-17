@@ -1,4 +1,4 @@
-# modes-radar-triangulation
+# mode-s-radar-triangulation
 
 Passive Vermessung von Mode-S-Bodenradaren anhand von `DF11`-All-Call-Antworten (`V1` bis `V5`) sowie Ortung von Flugzeugen ohne ADS-B-Positionsmeldungen per Extended Kalman Filter und RTS-Smoother (`V6`) mit einem einzelnen `1090-MHz`-Empfänger.
 
