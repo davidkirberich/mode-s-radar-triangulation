@@ -1,0 +1,2 @@
+code,confidence_score,lat_r,lon_r,period_s,rpm,R_bar_max,spatial_contrast,azimuth_spread,mainlobe_ratio,n_inliers,phi0_deg,peel_pass
+SI8,100.0,53.2534,5.6108,5.04527,11.8923,0.9002,0.4634,1.0,0.3224,23774,219.73,1

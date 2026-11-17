@@ -1,0 +1,405 @@
+{
+  "elapsed_s": 311.22,
+  "calibration_aircraft": [
+    "3C5EE8",
+    "44008F",
+    "48415E",
+    "48418B",
+    "48418C",
+    "4841A5",
+    "4841A6",
+    "4844C6",
+    "484559",
+    "484C24",
+    "484EE5",
+    "4852F4",
+    "48548C",
+    "4855D2",
+    "486494",
+    "486495",
+    "486742",
+    "4867C4",
+    "486836",
+    "486897",
+    "4868BC",
+    "486954",
+    "4869C5",
+    "48C134",
+    "48C2B3",
+    "4CA4EC",
+    "4CA740",
+    "4CAD97",
+    "4D21F7",
+    "4D2221"
+  ],
+  "blind_aircraft": 150,
+  "mode_s_candidates": 76,
+  "mode_s_tracked": 38,
+  "validation": {
+    "n_matches": 425091,
+    "median_km": 7.631611793713787,
+    "mean_km": 14.551025100438078,
+    "rmse_km": 34.39432259012078,
+    "p90_km": 27.483124959848883
+  },
+  "angular_calibration": {
+    "SI8": {
+      "sigma_deg": 9.783326514342663,
+      "bias_deg": -2.559890514480817,
+      "samples": 1309,
+      "aircraft": 29
+    },
+    "SI44": {
+      "sigma_deg": 1.8171876471607231,
+      "bias_deg": -1.3894362472843595,
+      "samples": 27140,
+      "aircraft": 30
+    },
+    "SI10": {
+      "sigma_deg": 1.0992971190552772,
+      "bias_deg": -0.019064848551442606,
+      "samples": 28253,
+      "aircraft": 30
+    }
+  },
+  "raw_formats": {
+    "DF11": 51151371,
+    "DF20": 21948948,
+    "altitude_updates": 3687345,
+    "commb_unidentified": 23806093,
+    "DF17": 20929659,
+    "DF21": 6086806,
+    "DF4": 18028245,
+    "DF5": 4351518,
+    "DF0": 14833672,
+    "bds50_velocity": 2051082,
+    "reference_positions": 2508394,
+    "commb_ambiguous_50_60": 1467353,
+    "DF16": 1062071,
+    "commb_inconsistent_turn": 833,
+    "altitude_unavailable": 8141,
+    "DF18": 28
+  },
+  "tracking": {
+    "A_accepted": 251350,
+    "V_accepted": 68061,
+    "B_accepted": 136499,
+    "B_rejected": 19447,
+    "altitude_unobserved": 0,
+    "track_lost": 37,
+    "A_rejected": 660,
+    "V_rejected": 490
+  },
+  "blind_map_example": "06A0C2-1",
+  "altitude_datum": "barometric pressure altitude; not geometric ENU Up",
+  "bds60": "not a ground velocity; never assimilated",
+  "scope": "archived_only",
+  "schemas": {
+    "capture-20261114T134026-1938-804565802.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261114T140000-1938-054456129.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261114T150000-1938-023479525.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261114T160000-1938-047025215.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261114T170000-1938-016564042.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261114T180000-1938-039294051.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261114T191130-140-757045217.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261114T193120-142-735586007.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261114T200000-142-000618393.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261114T210000-142-024704336.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261114T220000-142-048333172.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261114T230000-142-020179311.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T000000-142-044821166.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T010000-142-011121536.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T020000-142-030541972.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T030000-142-050236047.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T040000-142-015687389.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T050000-142-035961027.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T060000-142-002455557.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T070000-142-023798473.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T080000-142-043464707.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T090000-142-009035729.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T100000-142-029852567.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T110000-142-023736392.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T120000-142-017316197.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T130000-142-037613754.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T140000-142-003646606.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T150000-142-025165538.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T160000-142-046276522.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T170000-142-013761977.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T180000-142-034612659.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T190000-142-000806506.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T200000-142-022533677.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T210000-142-044042603.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T220000-142-009961545.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261115T230000-142-030141897.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261116T000000-142-050468463.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261116T010000-142-016459827.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261116T020000-142-037046882.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261116T030000-142-003330553.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261116T040000-142-024069527.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261116T050000-142-044972924.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261116T060000-142-012001770.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261116T070000-142-033868893.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261116T080000-142-054451359.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261116T090000-142-021483139.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261116T100000-142-042657335.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261116T110000-142-010173675.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261116T120000-142-029597927.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261116T130000-142-050478319.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    },
+    "capture-20261116T140000-142-016261675.sqlite": {
+      "run": "CREATE TABLE run (metadata_json TEXT NOT NULL, status TEXT NOT NULL,\n                boundary_complete INTEGER NOT NULL)",
+      "df11_events": "CREATE TABLE df11_events (\n                raw_offset INTEGER NOT NULL, recv_ns INTEGER NOT NULL,\n                monotonic_ns INTEGER NOT NULL, mlat_ticks INTEGER NOT NULL,\n                icao24 TEXT NOT NULL, code_type TEXT NOT NULL, code_val INTEGER NOT NULL,\n                lat REAL, lon REAL, alt_baro, pos_age_ms INTEGER, gs REAL, track REAL,\n                session_id TEXT NOT NULL\n            )",
+      "clock_anchors": "CREATE TABLE clock_anchors (monotonic_ns INTEGER NOT NULL,\n                mlat_ticks INTEGER NOT NULL, raw_offset INTEGER NOT NULL)",
+      "clock_fit": "CREATE TABLE clock_fit (points INTEGER NOT NULL, ticks_per_second REAL,\n                max_abs_residual_ticks REAL, discontinuities INTEGER NOT NULL)"
+    }
+  }
+}
