@@ -2,6 +2,8 @@
 
 Passive Vermessung von Mode-S-Bodenradaren anhand von `DF11`-All-Call-Antworten (`V1` bis `V5`) sowie Ortung von Flugzeugen ohne ADS-B-Positionsmeldungen per Extended Kalman Filter und RTS-Smoother (`V6`) mit einem einzelnen `1090-MHz`-Empfänger.
 
+Zum vollständige Artikel: https://www.david-kirberich.de/lab/mode-s-radar-triangulation/
+
 ## Repository-Struktur
 
 - `src/`: Aufzeichnungs- und Archivierungs-Skripte (`beast_record.py`, `beast_capture.py`, `beast_archive.py`), Kalibrierungs- und Tracking-Skripte (`V1` bis `V6`) sowie gemeinsame Hilfsmodule (`beast_inspect.py`, `experiment_runs.py`)
